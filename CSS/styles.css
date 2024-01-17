@@ -81,7 +81,7 @@ nav ul li:first-child a {
       rgba(19, 19, 24, 0.8) 0%,
       rgba(19, 19, 24, 0) 100%
     ),
-    url("/Images/cover-1.png");
+    url("/Images/cover.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
