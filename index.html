@@ -4,97 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Traveler Space</title>
-    <link rel="stylesheet" type="text/css" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body>
-    <div class="container">
-      <!-- header section start -->
-      <div class="header">
-        <div class="logo">
-          <img src="Images/Group 40071 (2).png" alt="" />
-          <h1>Traveler<span class="primary-color">Space</span></h1>
-        </div>
-        <div class="menu-items">
-          <li>
-            <a href="#"><span class="item-color">Home</span></a>
-            <a href="#">Packages</a>
-            <a href="#">Testimonial</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-          </li>
-        </div>
+  <body class="container">
+    <header>
+      <div class="name">
+        <img src="Images/logo.png" alt="" />
+        <h2>Traveler<span class="name-color">Space</span></h2>
       </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- header section end -->
+    <!-- header section end -->
 
-      <!-- cover section start -->
+    <!-- cover section start -->
 
-      <div class="first-cover-section">
-        <div class="first-cover-content">
-          <h1>Explore Your Travel</h1>
-          <p>
-            "Explore Your Travel" is an inviting phrase that encourages
-            individuals to embark on transformative journeys, fostering
-            self-discovery and creating lasting memories.
-          </p>
+    <section class="search-container">
+      <div class="search-content">
+        <h1>Explore Your Travel</h1>
+        <p>
+          "Explore Your Travel" is an inviting phrase that encourages
+          individuals to embark on transformative journeys, <br />
+          fostering self-discovery and creating lasting memories.
+        </p>
+      </div>
+      <div class="search-box">
+        <div class="search-option">
+          <input class="search-input" type="text" placeholder="Where go" />
         </div>
-        <div class="search-box">
-    <div class="search-option">
-      <input type="text" placeholder="Where">
-    </div>
-    
-    <div class="search-option">
-      <input type="date" placeholder="When">
-    </div>
-    
-    <div class="search-option">
-      <select>
-        <option value="" disabled selected>Select Type</option>
-        <option value="adventure">Adventure</option>
-        <option value="beach">Beach</option>
-        <option value="city">City</option>
-        <!-- Add more options as needed -->
-      </select>
-    </div>
-    
-    <button class="search-button">
-      Find Now
-    </button>
-  </div>
+        <div class="search-option">
+          <select class="search-input">
+            <option value="" disabled selected>When</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+        <div class="search-option">
+          <select class="search-input">
+            <option value="" disabled selected>Select</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+        <button class="search-button">
+          <span class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+            </svg> </span
+          >Find Now
+        </button>
       </div>
-      <div class="box-3">Box-3</div>
-      <div class="box-4">Box-4</div>
-      <div class="box-5">Box-5</div>
-      <div class="box-6">Box-6</div>
-      <div class="box-7">Box-7</div>
-      <div class="box-8">Box-8</div>
-      <div class="box-9">Box-9</div>
-      <div class="box-10">Box-10</div>
-      <div class="box-11">Box-11</div>
-      <div class="box-12">Box-12</div>
-      <div class="box-13">Box-13</div>
-      <div class="box-14">Box-14</div>
-      <div class="box-15">Box-15</div>
-      <div class="box-16">Box-16</div>
-      <div class="box-17">Box-17</div>
-      <div class="box-18">Box-18</div>
-      <div class="box-19">Box-19</div>
-      <div class="box-20">Box-20</div>
-      <div class="box-21">Box-21</div>
-      <div class="box-22">Box-22</div>
-      <div class="box-23">Box-23</div>
-      <div class="box-24">Box-24</div>
-      <div class="box-25">Box-25</div>
-    </div>
-    <footer class="footer-container">
-      <div class="footer-content">
-        <img src="" alt="" />
-        <h1></h1>
-        <p></p>
-      </div>
-      <div class="footer-social-icon"></div>
-      <hr />
-      © 2017, All Right Reserved.
-    </footer>
+    </section>
+
+    <!-- cover section end -->
   </body>
 </html>
