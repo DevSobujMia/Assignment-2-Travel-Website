@@ -2,6 +2,9 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   height: 100vh;
   max-width: 100%;
   font-family: "Mulish", sans-serif;
@@ -101,7 +104,8 @@ nav ul li:first-child a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 550px;
+  width: 1170px;
+  height: 500px;
   border-radius: 16px;
   text-align: center;
 }
@@ -836,8 +840,10 @@ footer {
 }
 
 .footer-container {
+  width: 1440px;
   text-align: center;
-  padding: 100px;
+  padding: 100px 100px 0 100px;
+  margin: 0 auto;
 }
 
 .footer-title {
@@ -902,12 +908,13 @@ footer {
   color: #131318;
   font-size: 16px;
   font-weight: 300;
-  margin-top: 80px;
+  margin: 50px auto;
 }
 
 /* Rest of your styles */
 
 /* Responsive styles */
+/* Add a media query for smaller screens */
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 20px;
@@ -919,51 +926,43 @@ footer {
   }
 
   .name img {
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   nav ul {
     flex-direction: column;
     text-align: center;
+    margin-top: 10px;
   }
 
   .search-container {
-    height: 600px;
+    height: auto;
   }
 
   .search-content {
-    padding: 20px;
-  }
-
-  .search-content h1 {
-    font-size: 40px;
-  }
-
-  .search-content p {
-    font-size: 14px;
-    line-height: 20px;
+    padding: 30px;
   }
 
   .search-box {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 15px;
   }
 
-  .search-option {
-    width: 100%;
-  }
-
-  .search-input {
+  .search-input,
+  .search-option select,
+  .search-button {
     width: 100%;
   }
 
   .search-button {
-    width: 173px;
+    padding-right: 0;
   }
 
   .blog {
     flex-direction: column;
-    margin: 40px auto;
+    align-items: center;
+    text-align: center;
   }
 
   .blog-article,
@@ -972,50 +971,32 @@ footer {
     margin-right: 0;
   }
 
-  .img-grid {
-    flex-direction: column;
-  }
-
-  .row-1,
-  .row-2,
-  .row-3 {
-    flex-direction: column;
-    margin: 10px 0;
-  }
-
-  #common-img {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
+  .gallery-container,
   .Features,
+  .deals,
+  .video-section,
+  .newsletter,
+  footer {
+    text-align: center;
+  }
+
+  .gallery-title,
+  .features-title,
   .deals-title,
+  .newsletter-form,
+  .footer-title {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .img-grid,
   .deals-cover,
+  .discount-photo {
+    width: 100%;
+  }
+
   .deals-box {
     width: 100%;
-    margin: 0;
-  }
-
-  .deals-box {
-    height: auto;
-  }
-
-  .deals-time,
-  .deals-details {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10px;
-  }
-
-  .deals-time img {
-    margin-bottom: 5px;
-  }
-
-  .package-price {
-    margin-right: 0;
-  }
-
-  .booking-btn {
-    margin: 20px 0;
+    right: 0;
   }
 }
