@@ -288,17 +288,22 @@ nav ul li:first-child a {
   justify-content: space-between;
 }
 
-/* this common img id for all img inside img-grid */
+/* this common styles for all img inside the img-grid */
 #common-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 16px;
-  text-align: center;
-  align-items: center;
   font-size: 28px;
   font-weight: 800;
   color: #fff;
+  position: relative;
+}
+
+.country-name {
+  position: absolute;
+  top: 33%;
+  left: 38%;
 }
 
 .maldives {
@@ -513,7 +518,6 @@ nav ul li:first-child a {
 /* Deals and Discounts section style start */
 
 .deals {
-  border: 2px solid salmon;
   margin: 40px 0;
 }
 
@@ -553,6 +557,7 @@ nav ul li:first-child a {
   background-position: center;
   border-radius: 16px;
   margin: 40px 0;
+  position: relative;
 }
 
 .deals-box {
@@ -565,6 +570,9 @@ nav ul li:first-child a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: absolute;
+  top: 60px;
+  right: 70px;
 }
 
 .deals-time {
@@ -625,4 +633,200 @@ nav ul li:first-child a {
   font-size: 20px;
   font-weight: 600;
   margin: 20px 0;
+}
+
+/* 2nd cover */
+
+#cover-2 {
+  transform: scaleX(-1);
+}
+
+.button-div {
+  text-align: center;
+}
+
+.button-see-more {
+  width: 210px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+}
+
+/* new section */
+
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0px;
+}
+
+.video-details {
+  width: 550px;
+  height: 500px;
+  margin-right: 20px;
+}
+
+.video-details h2 {
+  width: 448px;
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.video-details p {
+  width: 532px;
+  color: #5a5a5d;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.video-details li {
+  width: 518px;
+  color: #131318;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.video-details button {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+}
+
+.video {
+  width: 610px;
+  height: 424px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    #131318 -31.96%,
+    rgba(19, 19, 24, 0) 100%
+  );
+}
+
+/* Rest of your styles */
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name img {
+    margin-top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .search-container {
+    height: 600px;
+  }
+
+  .search-content {
+    padding: 20px;
+  }
+
+  .search-content h1 {
+    font-size: 40px;
+  }
+
+  .search-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-option {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .search-button {
+    width: 173px;
+  }
+
+  .blog {
+    flex-direction: column;
+    margin: 40px auto;
+  }
+
+  .blog-article,
+  .blog-img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .img-grid {
+    flex-direction: column;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3 {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  #common-img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .Features,
+  .deals-title,
+  .deals-cover,
+  .deals-box {
+    width: 100%;
+    margin: 0;
+  }
+
+  .deals-box {
+    height: auto;
+  }
+
+  .deals-time,
+  .deals-details {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .deals-time img {
+    margin-bottom: 5px;
+  }
+
+  .package-price {
+    margin-right: 0;
+  }
+
+  .booking-btn {
+    margin: 20px 0;
+  }
 }
