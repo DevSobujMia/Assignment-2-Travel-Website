@@ -4,10 +4,9 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: "Mulish", sans-serif;
   box-sizing: border-box;
   height: 100vh;
-  max-width: 100%;
-  font-family: "Mulish", sans-serif;
 }
 
 .container {
@@ -17,7 +16,6 @@ body {
 
 /* common styles */
 .btn {
-  font-family: Mulish;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -29,6 +27,7 @@ body {
   outline: none;
   border: none;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 /* start header styles */
@@ -130,11 +129,17 @@ nav ul li:first-child a {
 
 .search-box {
   display: inline-flex;
+  justify-content: center;
   padding: 16px;
-  align-items: flex-start;
+  align-items: center;
   gap: 24px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.3);
+  /* margin: 0 auto; */
+}
+
+.hidden-label {
+  display: none;
 }
 
 .search-option {
@@ -147,14 +152,13 @@ nav ul li:first-child a {
 }
 
 .search-input {
-  width: calc(100% - 20px);
-  height: 100%;
+  width: 174px;
+  height: 52px;
   border: none;
   outline: none;
-  padding: 0 10px;
   border-radius: 8px;
   font-size: 16px;
-  text-align: start;
+  text-indent: 10px;
   font-weight: 400;
   color: rgba(19, 19, 24, 0.5);
 }
@@ -166,27 +170,17 @@ nav ul li:first-child a {
   border-radius: 8px;
   background: #ff5400;
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
   align-items: center;
   padding-right: 30px;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  position: relative;
 }
 
-.search-icon {
-  position: absolute;
-  left: 35px;
-  top: 55%;
-  transform: translateY(-50%);
-}
-
-.search-icon svg {
-  fill: #fff;
-  width: 35px;
-  height: 35px;
+i.fas.fa-search:before {
+  margin-left: 20px;
 }
 
 /* cover section end */
@@ -250,11 +244,13 @@ nav ul li:first-child a {
 .gallery-container {
   height: 1150px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .gallery-title {
   width: 650px;
-  margin: 0 auto;
+  margin: 50px auto;
+  text-align: center;
 }
 
 .gallery-title h1 {
@@ -262,6 +258,7 @@ nav ul li:first-child a {
   font-size: 40px;
   font-weight: 800;
   margin: 10px 0;
+  text-align: center;
 }
 
 .gallery-title p {
@@ -269,27 +266,31 @@ nav ul li:first-child a {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+  text-align: center;
 }
 
 .img-grid {
-  width: 100%;
+  width: 1170px;
   margin-top: 40px;
+  margin: 0 auto;
 }
 
 .row-1 {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .row-2 {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 22px auto;
 }
 
 .row-3 {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 /* this common styles for all img inside the img-grid */
@@ -301,13 +302,6 @@ nav ul li:first-child a {
   font-size: 28px;
   font-weight: 800;
   color: #fff;
-  position: relative;
-}
-
-.country-name {
-  position: absolute;
-  top: 33%;
-  left: 38%;
 }
 
 .maldives {
@@ -637,6 +631,7 @@ nav ul li:first-child a {
   font-size: 20px;
   font-weight: 600;
   margin: 20px 0;
+  cursor: pointer;
 }
 
 /* 2nd cover */
@@ -659,6 +654,7 @@ nav ul li:first-child a {
   font-size: 20px;
   font-weight: 600;
   border: none;
+  cursor: pointer;
 }
 
 /* new section */
@@ -709,6 +705,7 @@ nav ul li:first-child a {
   font-weight: 600;
   border: none;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .video {
@@ -832,14 +829,13 @@ nav ul li:first-child a {
 /* last section end */
 
 footer {
-  width: 100%;
-  height: 502px;
+  height: 500px;
   background: rgba(19, 19, 24, 0.05);
   margin-top: 0 auto;
 }
 
 .footer-container {
-  width: 1440px;
+  width: 1170px;
   text-align: center;
   padding: 100px 100px 0 100px;
   margin: 0 auto;
@@ -910,18 +906,16 @@ footer {
   margin: 50px auto;
 }
 
-/* Rest of your styles */
-
-/* Responsive styles */
 /* Add a media query for smaller screens */
+
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 20px;
   }
 
   header {
+    display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .name img {
@@ -929,9 +923,7 @@ footer {
   }
 
   nav ul {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 10px;
+    display: none;
   }
 
   .search-container {

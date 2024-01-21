@@ -43,8 +43,10 @@
       </div>
       <div class="search-box">
         <div class="search-option">
-          <input class="search-input" type="text" placeholder="Where go" />
+          <label for="searchInput" class="hidden-label"></label>
+          <input id="searchInput" class="search-input" type="text" placeholder="Where to go" />
         </div>
+        
         <div class="search-option">
           <select class="search-input">
             <option value="" disabled selected>When</option>
@@ -62,13 +64,8 @@
           </select>
         </div>
         <button class="search-button">
-          <span class="search-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-              />
-            </svg> </span
-          >Find Now
+            <i class="fas fa-search"></i>
+          <span>Find Now</span>
         </button>
       </div>
     </section>
@@ -253,7 +250,7 @@
             <button>See More</button>
           </div>
           <div class="video">
-            <iframe class="video" width="610" height="424" src="https://www.youtube.com/embed/lbzfOXlG5dA" title="বাংলাদেশের সবচেয়ে উচু ১০টি পাহাড় - 10 Highest Mountain in BD 🇧🇩 - travel with rd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/lbzfOXlG5dA" title="বাংলাদেশের সবচেয়ে উচু ১০টি পাহাড় - 10 Highest Mountain in BD 🇧🇩 - travel with rd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </section>
 
@@ -282,7 +279,7 @@
       </div>
         <!-- last section end -->
 
-        <footer>
+        <footer class="footer">
           <div class="footer-container">
             <div class="footer-title">
               <div class="footer-logo">
